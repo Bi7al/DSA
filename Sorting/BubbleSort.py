@@ -1,13 +1,15 @@
-array = [1,3,4,5,68,3,45,56,73];
+array = [9,8,7,6,5,4,3,2,1];
 
 
 
 
 
 print("Original array: ", array);
-for i in range(len(array)-1):
-    for j in range(i+1,len(array)-1):
-        if array[i]>array[j]:
-            array[i],array[j]= array[j],array[i]; # Tuple Packing and Unpacking
+for i in range(len(array)):
+    for j in range(0,len(array)-1):
+        if array[j]>array[j+1]:
+            temp = array[j];
+            array[j] = array[j+1];
+            array[j+1] = temp;
 
 print("Sorted array: ", array);
