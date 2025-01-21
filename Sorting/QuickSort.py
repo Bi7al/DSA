@@ -2,7 +2,7 @@
 #::: if currval == swapvalue  : pass
 #::: if currVal > Swap : Swap values
 # swap swap values with  pivot value
-def quicksort(array, start,high):
+def Quicksort(array, start,high):
     if(len(array)==1 or start >= high):
         return array;
     else:
@@ -19,10 +19,11 @@ def quicksort(array, start,high):
             elif array[current_Index]> pivot_value:
                 pass;
             
-        quicksort(array,start,swap_Index-1);
-        quicksort(array,swap_Index+1,high);
+        Quicksort(array,start,swap_Index-1);
+        Quicksort(array,swap_Index+1,high);
         
 array = [9,8,7,6,5,4,3,2,1,0];
-quicksort(array,0,len(array)-1);
-print(array)
+print("Original Array : ",array);
+Quicksort(array,0,len(array)-1);
+print("Sorted Array : ",array)
                 
