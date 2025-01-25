@@ -26,4 +26,15 @@ array = [9,8,7,6,5,4,3,2,1,0];
 print("Original Array : ",array);
 Quicksort(array,0,len(array)-1);
 print("Sorted Array : ",array)
-                
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            
